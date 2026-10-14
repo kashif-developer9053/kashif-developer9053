@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="1200" height="24" role="presentation">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F6CBD" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#0F6CBD" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#0F6CBD" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#00D4FF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00D4FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .beam{animation:beam 5s ease-in-out infinite}
+    @keyframes beam{from{transform:translateX(-260px)}to{transform:translateX(1200px)}}
+    .dia{transform-box:fill-box;transform-origin:center;animation:dia 3s ease-in-out infinite}
+    @keyframes dia{0%,100%{opacity:.5;transform:rotate(45deg) scale(1)}50%{opacity:1;transform:rotate(45deg) scale(1.35)}}
+  </style>
+  <rect x="0" y="11" width="1200" height="1" fill="url(#base)"/>
+  <rect class="beam" x="0" y="10" width="260" height="3" fill="url(#beam)"/>
+  <rect class="dia" x="596" y="8" width="8" height="8" fill="#00D4FF" transform="rotate(45 600 12)"/>
+</svg>

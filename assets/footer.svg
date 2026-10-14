@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 130" width="1200" height="130" role="img" aria-label="Build with purpose. Engineer with care. Keep improving.">
+  <defs>
+    <radialGradient id="g1"><stop offset="0" stop-color="#00D4FF" stop-opacity=".30"/><stop offset="1" stop-color="#00D4FF" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#00D4FF" stroke-opacity=".07"/></pattern>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00D4FF" stop-opacity="0"/><stop offset=".5" stop-color="#00D4FF" stop-opacity=".9"/><stop offset="1" stop-color="#00D4FF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="f"><rect width="1200" height="130" rx="14"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace}
+    .d{animation:d 12s ease-in-out infinite alternate}
+    @keyframes d{from{transform:translateX(-260px)}to{transform:translateX(260px)}}
+    .e{animation:e 5s ease-in-out infinite}
+    @keyframes e{from{transform:translateX(-300px)}to{transform:translateX(1200px)}}
+  </style>
+  <g clip-path="url(#f)">
+    <rect width="1200" height="130" fill="#060708"/>
+    <rect width="1200" height="130" fill="url(#grid)"/>
+    <g class="d"><ellipse cx="600" cy="150" rx="460" ry="110" fill="url(#g1)"/></g>
+    <rect x="0" y="0" width="1200" height="3" fill="#00D4FF" fill-opacity=".12"/>
+    <rect class="e" x="0" y="0" width="300" height="3" fill="url(#edge)"/>
+    <text class="mono" x="600" y="62" text-anchor="middle" font-size="18" letter-spacing="1" fill="#00D4FF">Build with purpose. Engineer with care. Keep improving.</text>
+    <text class="mono" x="600" y="92" text-anchor="middle" font-size="12" letter-spacing="3" fill="#6B7886">ELDIANCORE.COM  ·  KASHIFDEV.NETLIFY.APP</text>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="129" rx="14" fill="none" stroke="#00D4FF" stroke-opacity=".18"/>
+</svg>
